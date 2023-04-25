@@ -10,13 +10,41 @@ Before you get started, you will need the following:
 * PostgreSQL installed on your machine
 * Basic knowledge of Ruby on Rails
 
-### Setup
+## Setup
 
-1. Clone the repository to your local machine
-2. Navigate to the project directory in your terminal
-3. Run `bundle install` to install all necessary gems and dependencies
-4. Create the database with `rails db:create`
-5. Run the database migrations with `rails db:migrate`
+To get started, follow these steps:
+
+1. Clone the repository to your local machine:
+
+   ```
+   git clone https://github.com/your-username/your-repository.git
+   ```
+
+2. Navigate to the repository directory:
+
+   ```
+   cd your-repository
+   ```
+
+3. Install the necessary dependencies:
+
+   ```
+   bundle install
+   ```
+
+4. Set up the database:
+
+   ```
+   rails db:create && rails db:migrate
+   ```
+
+5. Start the Rails server:
+
+   ```
+   rails server
+   ```
+
+6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
 ### Ruby version
 
@@ -59,13 +87,15 @@ To initialize the database with the necessary tables and seed data, run the foll
 rails db:migrate
 ```
 
-### Usage
+## Usage
 
-Once you have completed the setup, you can start the server by running:
+Once the application is running, you can use the following endpoints to create, authenticate, and authorize users:
 
-```
-rails s
-```
+- `POST /users` - create a new user with a username, password, and age
+- `POST /login` - authenticate a user with a username and password and receive a JWT token
+- `GET /auto_login` - authorize a user with a JWT token
+
+Note that the `/auto_login` endpoint is protected and requires a valid JWT token to access.
 
 Then, navigate to `http://localhost:3000` in your browser to view the application.
 
@@ -85,6 +115,6 @@ This application requires no additional services to run.
 
 To deploy this application to a server, follow the standard deployment process for Ruby on Rails applications.
 
-### Conclusion
+## Conclusion
 
-This README provides an overview of the necessary steps to get the user login and sign up functionality working with JWT authentication. If you have any questions or issues, please refer to the code or consult the Ruby on Rails documentation.
+This repository provides a simple example of how to implement user authentication and authorization with JWT in a Ruby on Rails application. It is just one approach and may not be suitable for every application, but it serves as a starting point for building more complex systems.
