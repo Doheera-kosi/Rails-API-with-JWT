@@ -1,3 +1,5 @@
 class User < ApplicationRecord
-    attr_accessor :password
-end
+    has_secure_password
+    # ...
+  end
+  
