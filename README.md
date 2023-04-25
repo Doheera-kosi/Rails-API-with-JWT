@@ -2,7 +2,7 @@
 
 > This application focuses on user login and sign up and authorizing/authenticating them with JWT (JSON Web Tokens).
 
-### Pre-requisite
+## Pre-requisite
 
 Before you get started, you will need the following:
 
@@ -46,11 +46,11 @@ To get started, follow these steps:
 
 6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
-### Ruby version
+## Ruby version
 
 This application was developed with Ruby version 3.1.1 and Rails version 7.0.4.3
 
-### System dependencies
+## System dependencies
 
 This application has the following system dependencies:
 
@@ -58,7 +58,7 @@ This application has the following system dependencies:
 * Rails
 * PostgreSQL
 
-### Configuration
+## Configuration
 
 1. Clone the repository to your local machine.
 2. Navigate to the root directory of the project and run `bundle install` to install all necessary gems.
